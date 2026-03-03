@@ -1,0 +1,16 @@
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\bin\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.exe
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\bin\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.deps.json
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\bin\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.runtimeconfig.json
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\bin\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.dll
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\bin\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.pdb
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.Form1.resources
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.csproj.GenerateResource.cache
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.AssemblyInfoInputs.cache
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.AssemblyInfo.cs
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.csproj.CoreCompileInputs.cache
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.dll
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\refint\t4_p3_FORMSGESTORTAREAS.dll
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.pdb
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\t4_p3_FORMSGESTORTAREAS.genruntimeconfig.cache
+C:\Users\noealdlla\Desktop\entornos\t4_p3_FORMSGESTORTAREAS\t4_p3_FORMSGESTORTAREAS\obj\Debug\net8.0-windows\ref\t4_p3_FORMSGESTORTAREAS.dll
