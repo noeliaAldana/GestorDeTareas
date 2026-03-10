@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace t4_p3_FORMSGESTORTAREAS
@@ -22,15 +22,18 @@ namespace t4_p3_FORMSGESTORTAREAS
         {
             string titulo = buttonName.Text;
             string descripcion = textBox2.Text;
+            bool prioridadAlta = chkPrioridadAlta.Checked;
+
 
             if (titulo != "")
             {
                 bool estado = checkBox1.Checked;
-                Tarea tarea = new Tarea(titulo, descripcion, estado, fecha.Value);
+                Tarea tarea = new Tarea(titulo, descripcion, estado, fecha.Value, prioridadAlta);
                 lista.Items.Add(tarea);
                 buttonName.Text = "";
                 textBox2.Text = "";
                 checkBox1.Checked = false;
+                chkPrioridadAlta.Checked = false;
             }
         }
 
@@ -57,7 +60,8 @@ namespace t4_p3_FORMSGESTORTAREAS
                 Tarea tarea = (Tarea)lista.SelectedItem;
                 infoTarea.Text =
                     "Nombre: " + tarea.Titulo + Environment.NewLine +
-                    "Descripci�n: " + tarea.Descripcion + Environment.NewLine +
+                    "Descripción: " + tarea.Descripcion + Environment.NewLine +
+                    "Prioridad Alta: " + (tarea.PrioridadAlta ? "SI" : "NO") + Environment.NewLine +
                     "Estado: " + (tarea.Completada ? "COMPLETADO" : "NO COMPLETADO") +
                     Environment.NewLine +
                     "Fecha: " + tarea.Fecha.ToShortDateString();
@@ -93,9 +97,22 @@ namespace t4_p3_FORMSGESTORTAREAS
 
                 infoTarea.Text =
                     "Nombre: " + tarea.Titulo + Environment.NewLine +
-                    "Descripci�n: " + tarea.Descripcion + Environment.NewLine +
+                    "Descripción: " + tarea.Descripcion + Environment.NewLine +
+                    "Prioridad Alta: " + (tarea.PrioridadAlta ? "SI" : "NO") + Environment.NewLine +
                     "Estado: COMPLETADO" + Environment.NewLine +
                     "Fecha: " + tarea.Fecha.ToShortDateString();
+            }
+        }
+
+        private void chkPrioridadAlta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkPrioridadAlta.Checked)
+            {
+                chkPrioridadAlta.Text = "Prioridad Alta 🔥";
+            }
+            else
+            {
+                chkPrioridadAlta.Text = "Prioridad Alta";
             }
         }
     }

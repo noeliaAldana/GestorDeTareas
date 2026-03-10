@@ -41,6 +41,7 @@
             textBox2 = new TextBox();
             checkBox1 = new CheckBox();
             buttonCompletar = new Button();
+            chkPrioridadAlta = new CheckBox();
             SuspendLayout();
             // 
             // buttonDelete
@@ -151,12 +152,24 @@
             buttonCompletar.UseVisualStyleBackColor = true;
             buttonCompletar.Click += buttonCompletar_Click;
             // 
+            // chkPrioridadAlta
+            // 
+            chkPrioridadAlta.AutoSize = true;
+            chkPrioridadAlta.Location = new Point(153, 207);
+            chkPrioridadAlta.Name = "chkPrioridadAlta";
+            chkPrioridadAlta.Size = new Size(98, 19);
+            chkPrioridadAlta.TabIndex = 11;
+            chkPrioridadAlta.Text = "Prioridad Alta";
+            chkPrioridadAlta.UseVisualStyleBackColor = true;
+            chkPrioridadAlta.CheckedChanged += chkPrioridadAlta_CheckedChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(548, 377);
+            Controls.Add(chkPrioridadAlta);
             Controls.Add(buttonCompletar);
             Controls.Add(checkBox1);
             Controls.Add(infoTarea);
@@ -188,5 +201,6 @@
         private TextBox textBox2;
         private CheckBox checkBox1;
         private Button buttonCompletar;
+        private CheckBox chkPrioridadAlta;
     }
 }
