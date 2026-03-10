@@ -1,8 +1,8 @@
-# Ignorar carpetas de compilación de Visual Studio
+# Ignorar carpetas de compilaciï¿½n de Visual Studio
 bin/
 obj/
-
-# Ignorar archivos de usuario y configuración local
+.vs/
+# Ignorar archivos de usuario y configuraciï¿½n local
 *.user
 *.suo
 *.userosscache
@@ -10,7 +10,7 @@ obj/
 # Ignorar archivos de NuGet
 packages/
 
-# Ignorar archivos de depuración y logs
+# Ignorar archivos de depuraciï¿½n y logs
 *.log
 *.cache
 
