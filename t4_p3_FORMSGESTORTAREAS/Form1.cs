@@ -34,14 +34,15 @@ namespace t4_p3_FORMSGESTORTAREAS
                 bool estado = checkBox1.Checked;
                 Tarea tarea = new Tarea(titulo, descripcion, estado, fecha.Value, prioridadAlta, categoria);
                 lista.Items.Add(tarea);
-				//
-				ActualizarContador();
+                //
+                ActualizarContador();
 
-				//
-				buttonName.Text = "";
-                textBox2.Text = "";
-                checkBox1.Checked = false;
-                chkPrioridadAlta.Checked = false;
+                //
+                //btnlimpiarcampos
+                //buttonName.Text = "";
+                //textBox2.Text = "";
+                //checkBox1.Checked = false;
+                //chkPrioridadAlta.Checked = false;
             }
         }
 
@@ -91,9 +92,9 @@ namespace t4_p3_FORMSGESTORTAREAS
             {
                 lista.Items.RemoveAt(lista.SelectedIndex);
                 infoTarea.Text = "";
-				ActualizarContador();
-			}
-		}
+                ActualizarContador();
+            }
+        }
 
         private void buttonCompletar_Click(object sender, EventArgs e)
         {
@@ -137,11 +138,28 @@ namespace t4_p3_FORMSGESTORTAREAS
         {
 
         }
-		//lblcontadortareas
-		private void ActualizarContador()
-		{
-			lblContadorTareas.Text = "Total de tareas: " + lista.Items.Count;
+        //lblcontadortareas
+        private void ActualizarContador()
+        {
+            lblContadorTareas.Text = "Total de tareas: " + lista.Items.Count;
+        }
+
+        //btnLimpiarCampos
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+			 
+			buttonName.Text = "";
+			textBox2.Text = "";
+			infoTarea.Text = "";
+
+			checkBox1.Checked = false;
+			chkPrioridadAlta.Checked = false;
+
+			if (cmbCategoria.Items.Count > 0)
+				cmbCategoria.SelectedIndex = 0;
+
+			fecha.Value = DateTime.Today;
 		}
-		//
-	}
+        //
+    }
 }
