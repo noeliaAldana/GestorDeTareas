@@ -12,11 +12,11 @@ namespace t4_p3_FORMSGESTORTAREAS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-			cmbCategoria.Items.Add("Trabajo");
-			cmbCategoria.Items.Add("Personal");
-			cmbCategoria.Items.Add("Estudios");
-			cmbCategoria.SelectedIndex = 0;
-		}
+            cmbCategoria.Items.Add("Trabajo");
+            cmbCategoria.Items.Add("Personal");
+            cmbCategoria.Items.Add("Estudios");
+            cmbCategoria.SelectedIndex = 0;
+        }
 
         private void infoTarea_TextChanged(object sender, EventArgs e)
         {
@@ -27,14 +27,18 @@ namespace t4_p3_FORMSGESTORTAREAS
             string titulo = buttonName.Text;
             string descripcion = textBox2.Text;
             bool prioridadAlta = chkPrioridadAlta.Checked;
-			string categoria = cmbCategoria.SelectedItem?.ToString() ?? "";
+            string categoria = cmbCategoria.SelectedItem?.ToString() ?? "";
 
-			if (titulo != "")
+            if (titulo != "")
             {
                 bool estado = checkBox1.Checked;
                 Tarea tarea = new Tarea(titulo, descripcion, estado, fecha.Value, prioridadAlta, categoria);
                 lista.Items.Add(tarea);
-                buttonName.Text = "";
+				//
+				ActualizarContador();
+
+				//
+				buttonName.Text = "";
                 textBox2.Text = "";
                 checkBox1.Checked = false;
                 chkPrioridadAlta.Checked = false;
@@ -66,7 +70,7 @@ namespace t4_p3_FORMSGESTORTAREAS
                     "Nombre: " + tarea.Titulo + Environment.NewLine +
                     "Descripción: " + tarea.Descripcion + Environment.NewLine +
                     "Categoría: " + tarea.Categoria + Environment.NewLine +
-					"Prioridad Alta: " + (tarea.PrioridadAlta ? "SI" : "NO") + Environment.NewLine +
+                    "Prioridad Alta: " + (tarea.PrioridadAlta ? "SI" : "NO") + Environment.NewLine +
                     "Estado: " + (tarea.Completada ? "COMPLETADO" : "NO COMPLETADO") +
                     Environment.NewLine +
                     "Fecha: " + tarea.Fecha.ToShortDateString();
@@ -87,8 +91,9 @@ namespace t4_p3_FORMSGESTORTAREAS
             {
                 lista.Items.RemoveAt(lista.SelectedIndex);
                 infoTarea.Text = "";
-            }
-        }
+				ActualizarContador();
+			}
+		}
 
         private void buttonCompletar_Click(object sender, EventArgs e)
         {
@@ -103,8 +108,8 @@ namespace t4_p3_FORMSGESTORTAREAS
                 infoTarea.Text =
                     "Nombre: " + tarea.Titulo + Environment.NewLine +
                     "Descripción: " + tarea.Descripcion + Environment.NewLine +
-					"Categoría: " + tarea.Categoria + Environment.NewLine +
-					"Prioridad Alta: " + (tarea.PrioridadAlta ? "SI" : "NO") + Environment.NewLine +
+                    "Categoría: " + tarea.Categoria + Environment.NewLine +
+                    "Prioridad Alta: " + (tarea.PrioridadAlta ? "SI" : "NO") + Environment.NewLine +
                     "Estado: COMPLETADO" + Environment.NewLine +
                     "Fecha: " + tarea.Fecha.ToShortDateString();
             }
@@ -124,8 +129,19 @@ namespace t4_p3_FORMSGESTORTAREAS
 
         private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
-			string categoriaSeleccionada = cmbCategoria.SelectedItem.ToString();
+            string categoriaSeleccionada = cmbCategoria.SelectedItem.ToString();
 
+        }
+
+        private void lblContadorTareas_Click(object sender, EventArgs e)
+        {
+
+        }
+		//lblcontadortareas
+		private void ActualizarContador()
+		{
+			lblContadorTareas.Text = "Total de tareas: " + lista.Items.Count;
 		}
+		//
 	}
 }
