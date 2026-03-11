@@ -42,6 +42,7 @@
             checkBox1 = new CheckBox();
             buttonCompletar = new Button();
             chkPrioridadAlta = new CheckBox();
+            cmbCategoria = new ComboBox();
             SuspendLayout();
             // 
             // buttonDelete
@@ -163,12 +164,22 @@
             chkPrioridadAlta.UseVisualStyleBackColor = true;
             chkPrioridadAlta.CheckedChanged += chkPrioridadAlta_CheckedChanged;
             // 
+            // cmbCategoria
+            // 
+            cmbCategoria.FormattingEnabled = true;
+            cmbCategoria.Location = new Point(14, 85);
+            cmbCategoria.Name = "cmbCategoria";
+            cmbCategoria.Size = new Size(121, 23);
+            cmbCategoria.TabIndex = 12;
+            cmbCategoria.SelectedIndexChanged += cmbCategoria_SelectedIndexChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
             ClientSize = new Size(548, 377);
+            Controls.Add(cmbCategoria);
             Controls.Add(chkPrioridadAlta);
             Controls.Add(buttonCompletar);
             Controls.Add(checkBox1);
@@ -202,5 +213,6 @@
         private CheckBox checkBox1;
         private Button buttonCompletar;
         private CheckBox chkPrioridadAlta;
+        private ComboBox cmbCategoria;
     }
 }

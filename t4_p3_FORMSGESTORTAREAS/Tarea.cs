@@ -8,8 +8,10 @@ namespace t4_p3_FORMSGESTORTAREAS
         private string descripcion;
         private bool completada;
         private DateTime fecha;
-
-        public string Titulo
+		//
+		private string categoria;
+        //
+		public string Titulo
         {
             get { return titulo; }
             set { titulo = value; }
@@ -33,23 +35,33 @@ namespace t4_p3_FORMSGESTORTAREAS
             get { return fecha; }
             set { fecha = value; }
         }
+		//
+		public string Categoria
+		{
+			get { return categoria; }
+			set { categoria = value; }
+		}
+        //
 
-        public Tarea(string titulo, string descripcion, bool completada, DateTime fecha, bool prioridadAlta)
+		public Tarea(string titulo, string descripcion, bool completada, DateTime fecha, bool prioridadAlta, string categoria)
         {
             this.titulo = titulo;
             this.descripcion = descripcion;
             this.completada = completada;
             this.fecha = fecha;
-            this.PrioridadAlta = prioridadAlta;
+            PrioridadAlta = prioridadAlta;
+            //
+			this.categoria = categoria;
+            //
 
-        }
+		}
 
-        public override string ToString()
+		public override string ToString()
         {
             string estado = Completada ? "✔ " : "";
             string prioridad = PrioridadAlta ? "🔥 " : "";
 
-            return estado + Titulo  + prioridad;
+            return estado + Titulo + " [" + Categoria + "] " + prioridad;
         }
     }
 }
