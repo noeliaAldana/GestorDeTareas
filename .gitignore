@@ -1,6 +1,7 @@
 # Ignorar carpetas de compilaci�n de Visual Studio
 bin/
 obj/
+#cambio de chkprioridad alta
 .vs/
 # Ignorar archivos de usuario y configuraci�n local
 *.user
