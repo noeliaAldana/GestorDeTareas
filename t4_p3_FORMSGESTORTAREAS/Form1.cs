@@ -34,7 +34,11 @@ namespace t4_p3_FORMSGESTORTAREAS
                 bool estado = checkBox1.Checked;
                 Tarea tarea = new Tarea(titulo, descripcion, estado, fecha.Value, prioridadAlta, categoria);
                 lista.Items.Add(tarea);
+
                 MessageBox.Show("LOGIN implementado");
+
+                MessageBox.Show("Registro implementado");
+
                 ActualizarContador();
 
                 //
